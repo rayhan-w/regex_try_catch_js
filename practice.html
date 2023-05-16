@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New practice for javascript</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+</head>
+<body>
+
+
+            <p >Practice Map Methood</p>
+            <p id="demo"></p>
+
+            <P>Practice set Methood</P>
+
+            <p id="demoo"></p>
+
+            <p id="demotext"></p>
+
+            <p id="textdemo"></p><br>
+
+            <input id="demon" type="password">
+            <button type="button" onclick="myFunction()">Test Input</button>
+            <p id="p01"></p>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="practice.js"></script>
+    <script>
+        function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demon").value;
+  try{
+    if (x === "") throw "empty";
+        if (x.length < 8) throw "Password should have at least eight characters.";
+        if (!x.includes("@")) throw "Password should contain the '@' symbol.";
+
+}
+catch (err) {
+        message.innerHTML = "Input is " + err;
+      }
+    }
+
+    </script>
+    
+</body>
+</html>
