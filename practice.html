@@ -48,11 +48,11 @@
         function myFunction() {
   const message = document.getElementById("p01");
   message.innerHTML = "";
-  let x = document.getElementById("demon").value;
+  let password = document.getElementById("demon").value;
   try{
-    if (x === "") throw "empty";
-        if (x.length < 8) throw "Password should have at least eight characters.";
-        if (!x.includes("@")) throw "Password should contain the '@' symbol.";
+    if (password == "") throw "empty";
+        if (password.length < 8) throw "Password should have at least eight characters.";
+        if (!password.includes("@")) throw "Password should contain the '@' symbol.";
 
 }
 catch (err) {
