@@ -45,3 +45,47 @@ const practice = new Map([
   }
 
   document.getElementById("textdemo").innerHTML = text;
+
+
+  // myFunction();
+ 
+  // function myFunction(){
+  //   let fruitName="Apple";
+  //   document.getElementById("demo1").innerHTML=typeof fruitName+"  "+fruitName;
+  // }
+  // document.getElementById("demo2").innerHTML=typeof fruitName;
+
+
+ let carName="Volvo";
+myFunction();
+
+function myFunction(){
+  document.getElementById("demo3").innerHTML=" I like"+ carName;
+}
+
+document.getElementById("demo4").innerHTML=" I like"+ carName;
+
+x=10;
+document.getElementById("demo5").innerHTML=x;
+var x;
+
+try{
+  y=10;
+  let  y=10;
+
+}
+catch(err){
+  document.getElementById("demo6").innerHTML = err;
+}
+
+var x = 5; 
+var y;   
+
+elem = document.getElementById("demo7");  
+elem.innerHTML = x + " " + y;       
+
+y = 7; 
+
+
+
+
