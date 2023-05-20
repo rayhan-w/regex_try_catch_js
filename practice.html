@@ -43,7 +43,8 @@
             <p id="demo6"></p>
             <p id="demo7"></p>
             <p id="demo8"></p>
-            
+            <p id="demo9"></p>
+            <p id="demo10"></p>
             
 
             
@@ -96,6 +97,42 @@ catch (err) {
   let x = 3.14;
   delete x;    
   </script>
+
+
+
+<script>
+  class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+    }
+  }
+  
+  const myCar1 = new Car("Ford", 2014);
+  const myCar2 = new Car("Audi", 2019);
+  
+  document.getElementById("demo9").innerHTML =
+  myCar1.name + " " + myCar2.name;
+  </script>
+
+<script>
+  class Me {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+  
+    }
+    age() {
+      const date = new Date();
+      return date.getFullYear() - this.year;
+    }
+  }
+  
+  const myAge = new Me("Ford", 2002);
+  document.getElementById("demo10").innerHTML =
+  "I am " + myAge.age() + " years old.";
+  </script>
+
   
     
 </body>
